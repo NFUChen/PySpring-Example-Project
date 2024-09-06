@@ -32,7 +32,7 @@ from py_spring.core.entities.component import Component
 from py_spring.core.entities.properties.properties import Properties
 
 class ExampleProperties(Properties):
-    key = "example"
+    __key__ = "example"
     value: str
 
 class ExampleService(Component):
@@ -66,7 +66,7 @@ In this example, `ExampleProperties` is a properties class that inherits from Pr
 ### Configuration
 **PySpring** allows you to define application properties in a configuration file, such as `application-properties.json`. These properties are automatically mapped to the corresponding Properties class in your components.
 
-Example: Application Properties
+#### Example Application Properties:
 ```json
 {
     "example": {
