@@ -16,7 +16,7 @@ Map application properties from configuration files directly into your component
 To get started with **PySpring**, you need to install the framework:
 
 ```bash
-pip3 install git+https://github.com/NFUChen/PySpring.git
+pip3 install py_spring_core
 ```
 
 ### Defining Components
@@ -86,7 +86,7 @@ Copy code
 from py_spring import PySpringApplication
 
 if __name__ == "__main__":
-    app = PySpringApplication()
+    app = PySpringApplication("./app-config.json")
     app.run()
 ```
 
